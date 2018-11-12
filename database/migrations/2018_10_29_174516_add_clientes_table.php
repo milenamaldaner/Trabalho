@@ -19,6 +19,7 @@ class AddClientesTable extends Migration
             $table->string('cpf');
             $table->string('telefone');
             $table->string('endereço');
+            $table->timestamps();
 
            
         });

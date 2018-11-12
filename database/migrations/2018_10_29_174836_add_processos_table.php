@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+
 class AddProcessosTable extends Migration
 {
     /**
@@ -15,12 +16,13 @@ class AddProcessosTable extends Migration
     {
         Schema::create('processos', function (Blueprint $table) {
             $table->increments('id');
-            $table->increments('id_clientes');
+            $table->String('nome');
             $table->string('numero_processo');
             $table->string('instancia');
             $table->string('vara');
             $table->string('comarca');
             $table->string('descrição');
+            $table->timestamps();
             
         });
     }
